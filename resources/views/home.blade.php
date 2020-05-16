@@ -82,59 +82,71 @@
   <div style="background-color: rgba(255, 255, 255, 0.3);" class="container">
         <div class="row">
             <div class="col-md-12"><p><h3><b><center>Tramite de boletos</center></b></h3></p></div>
-        
-            <div class="clearfix"></div>
-
-            <div class="col-md-6">
-              <label for=""><h5><b>Nombre</b></h5></label>
-              <input type="text" class="form-control" >
-            </div>
-
-            <div class="col-md-6">
-              <label for=""><h5><b>Apellidos</b></h5></label>
-              <input type="text" class="form-control" >
-              <br>
-            </div>
-            <div class="clearfix"></div>
-              <br>
-            <div class="col-md-6">
-              <label for=""><h5><b>Tarjeta :</b></h5></label>
-              <input type="text" class="form-control" >
-            </div>
-
-            <div class="col-md-6">
-              <label for=""><h5><b>Contraseña :</b></h5></label>
-              <input type="password" class="form-control" >
-            <br>
-            </div>
-            <div class="clearfix"></div>
-            <br>
-            <div class="col-md-6">
-              <label for=""><h5><b>Cantidad :</b></h5></label>
-              <input type="text" class="form-control" >
-            </div>
-
-            <div class="col-md-6">
-              <label for=""><h5><b>Pelicula :</b></h5></label>
-              <select class="form-control" id="grid-state">
-                  <option>Otro día para matar</option>
-                  <option>Pacto de sangre</option>
-                  <option>Parabellum</option>
-                </select>
-                <br>
-                <br>
-            </div>
-            <div class="col-md-12">
-            <button class="btn btn-lg btn-primary">
-                        Tramitar Compra
-                      </button>
-            </div>
         </div>
         <br>
-        
+        <div class="w-full max-w-full">
+            <form action="">
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                      <label class="block uppercase tracking-wide text-black-700 text-lg font-bold mb-2">
+                        Nombres :
+                      </label>
+                      <input class="appearance-none block w-full bg-black-200 text-black-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"  type="text" placeholder="">
+                    </div>
+                    <div class="w-full md:w-1/2 px-3">
+                      <label class="block uppercase tracking-wide text-black-700 text-lg font-bold mb-2">
+                        Apellidos :
+                      </label>
+                      <input class="appearance-none block w-full bg-black-200 text-black-700 border border-black-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-black-500"  type="text" placeholder="">
+                    </div>
+                </div>
+                  <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase tracking-wide text-black-700 text-lg font-bold mb-2">
+                          Tarjeta :
+                        </label>
+                        <input class="appearance-none block w-full bg-black-200 text-black-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"  type="text" placeholder="">
+                      </div>
+                      <div class="w-full md:w-1/2 px-3">
+                        <label class="block uppercase tracking-wide text-black-700 text-lg font-bold mb-2">
+                          Contraseña :
+                        </label>
+                        <input class="appearance-none block w-full bg-black-200 text-black-700 border border-black-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-black-500"  type="password" placeholder="">
+                      </div>
+                  </div>
+                  <div class="flex flex-wrap -mx-3 mb-2">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                      <label class="block uppercase tracking-wide text-black-700 text-lg font-bold mb-2">
+                        Cantidad :
+                      </label>
+                      <input class="appearance-none block w-full bg-black-200 text-black-700 border border-black-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-black-600"  type="text" placeholder="Boletos">
+                    </div>
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                      <label class="block uppercase tracking-wide text-black-700 text-lg font-bold mb-2">
+                        Pelicula :
+                      </label>
+                      <div class="relative">
+                        <select class="block appearance-none w-full bg-black-200 border border-black-200 text-black-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-black-500" id="grid-state">
+                          <option>Otro día para matar</option>
+                          <option>Pacto de sangre</option>
+                          <option>Parabellum</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-black-700">
+                          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                    <br>
+                    <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" type="button">
+                        Tramitar Compra
+                      </button>
+                </div>
+            </form>
+        </div>
         <br>
     </div>
-
 
 
   
